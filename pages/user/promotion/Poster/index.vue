@@ -134,10 +134,22 @@ export default {
           })
         },
         success: function(res) {
-          uni.showModal({
-            title: '提示',
-            content: '保存成功',
-          })
+			uni.saveImageToPhotosAlbum({
+			  filePath: res.tempFilePath,
+			  success: function () {
+			    uni.showModal({
+			      title: '提示',
+			      content: '保存成功',
+			    })
+			  },
+			  fail: function () {
+			    uni.showModal({
+			      title: '提示',
+			      content: '保存失败',
+			    })
+			  },
+			})
+			console.log(res)
         },
       })
     },
