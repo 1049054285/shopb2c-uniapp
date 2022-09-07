@@ -59,9 +59,13 @@
     computed: {},
     created() {},
     watch: {
-      detail(next) {
-        this.goodsList = this.sortData(next, 4);
-      }
+	  detail: {
+	  	immediate: true,
+	  	handler (next) {
+	  		this.goodsList = this.sortData(next, 4);
+	  		console.log('new Value:', next, this.goodsList)
+	  	}
+	  }
     },
     methods: {
       swiperChange(e) {
@@ -202,14 +206,18 @@
       }
     }
 
-    .goods-box {
-      .goods-item {
-        margin-right: 22rpx;
-
-        &:nth-child(4n) {
-          margin-right: 0;
-        }
-      }
-    }
+	.goods-box {
+	    .goods-item {
+	        margin-right: 22rpx;
+	
+	        &:nth-child(4n) {
+	            margin-right: 0;
+	        }
+	    }
+	}
+	.min-goods{
+	    margin-right: 22rpx;
+	
+	}
   }
 </style>

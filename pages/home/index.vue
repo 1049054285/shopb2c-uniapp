@@ -82,6 +82,7 @@ import Banner from './components/Banner'
 import HotCommodity from './components/HotCommodity'
 import FirstNewProduct from './components/FirstNewProduct'
 import ProductsRecommended from './components/ProductsRecommended'
+import PromoteProduct from './components/PromoteProduct'
 //import Live from './components/Live'
 
 import { getHomeData, getShare, getCanvas } from '@/api/public'
@@ -108,6 +109,7 @@ export default {
     HotCommodity,
     FirstNewProduct,
     ProductsRecommended,
+	PromoteProduct,
     //Live,
   },
   props: {},
