@@ -1,6 +1,6 @@
 <template>
   <view class="my-promotion">
-    <view class="header">
+    <view class="header" :style="{background: background}">
       <view class="name acea-row row-center-wrapper">
         <view>当前佣金</view>
         <view class="record" @click="goCashRecord()">
@@ -59,6 +59,11 @@ export default {
         commissionCount: 0
       }
     };
+  },
+  computed: {
+    background() {
+      return `url('${this.$VUE_APP_RESOURCES_URL}/images/promotionBg.png') no-repeat`
+    },
   },
   mounted: function() {
     this.getInfo();

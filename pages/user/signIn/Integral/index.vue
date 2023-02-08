@@ -1,6 +1,6 @@
 <template>
   <view class="integral-details" ref="container">
-    <view class="header">
+    <view class="header" :style="{background: background}">
       <view class="currentScore">当前积分</view>
       <view>{{ info.integral }}</view>
       <view class="line"></view>
@@ -101,6 +101,11 @@ export default {
       loaded: false,
       loading: false
     };
+  },
+  computed: {
+    background() {
+      return `url('${this.$VUE_APP_RESOURCES_URL}/images/integralbg.jpg') no-repeat`
+    },
   },
   mounted: function() {
     this.getIntegral();
