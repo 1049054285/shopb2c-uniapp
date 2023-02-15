@@ -16,6 +16,7 @@
 - uniapp v3.1版本已经兼容h5，另外yshop有自己的H5，uniappv3.1以下版本未对H5端进行处理，如果需要请自行兼容。
 - manifest.json 中可以配置uni项目的一些信息
 - 打开manifest.json可配置小程序的 appid
+- 打开assets/css/style.less 替换 image url()中的域名为后台服务器的域名
 - 由于需要兼容app，公共样式由 main.js 迁移到了 App.vue，公共样式请在App.vue中进行编辑
 - 由于需要兼容app，尺寸单位由之前的rem改为rpx，由于修改样式工作量太大并且容易出错，已将.css更改为.less并在其中以之前rem的单位*100，获得新的rpx单位
 - 如需修改样式问题，请编辑.less的文件，请勿编辑.css的文件
