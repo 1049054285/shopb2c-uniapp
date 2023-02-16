@@ -80,11 +80,11 @@
             type: "weixin",
             icon: "icon-weixin2"
           },
-          {
-            name: "支付宝",
-            type: "alipay",
-            icon: "icon-icon34"
-          }
+          // {
+          //   name: "支付宝",
+          //   type: "alipay",
+          //   icon: "icon-icon34"
+          // }
         ],
         post: {
           extract_type: "weixin",
