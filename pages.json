@@ -3,7 +3,7 @@
     {
       "path": "pages/Loading/index",
       "style": {
-        "navigationBarTitleText": "圆码商城"
+        "navigationBarTitleText": "在线商城"
       }
     },
     {
@@ -40,7 +40,7 @@
     {
       "path": "pages/home/index",
       "style": {
-        "navigationBarTitleText": "圆码商城",
+        "navigationBarTitleText": "在线商城",
         "navigationBarTextStyle": "white",
         "navigationStyle": "custom"
       }
@@ -444,7 +444,7 @@
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Yshop",
+    "navigationBarTitleText": "Shop",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "navigationStyle": "default"

@@ -1,5 +1,5 @@
 {
-    "name" : "圆码商城",
+    "name" : "在线商城",
     "appid" : "wxc7821a52b880ccef",
     "description" : "",
     "versionName" : "1.0.1",
@@ -264,7 +264,7 @@
         "usingComponents" : true
     },
     "h5" : {
-        "title" : "yshop",
+        "title" : "shop",
         "devServer" : {
             "disableHostCheck" : true,
             "proxy" : {
